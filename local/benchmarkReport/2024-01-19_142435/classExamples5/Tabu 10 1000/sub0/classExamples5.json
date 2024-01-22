@@ -1,0 +1,190 @@
+{
+  "solutionId" : "1",
+  "score" : "0hard/-3615soft",
+  "busList" : [ {
+    "name" : "AAA1",
+    "capacity" : 470,
+    "visitType" : null,
+    "students" : [ ],
+    "visits" : [ {
+      "name" : "Studenti4",
+      "volume" : 6,
+      "visitType" : "STUDENT",
+      "location" : {
+        "lat" : 68.13403154818336,
+        "lon" : 6.207295225894194
+      },
+      "studentList" : null,
+      "srvTime" : 600,
+      "twStart" : 30822,
+      "twFinish" : 52045,
+      "arrivalTime" : 30725,
+      "bus" : "AAA1",
+      "prev" : null,
+      "next" : {
+        "name" : "Studenti3",
+        "volume" : 48,
+        "visitType" : "STUDENT",
+        "location" : {
+          "lat" : 27.48959878897156,
+          "lon" : 8.409127079505296
+        },
+        "studentList" : null,
+        "srvTime" : 600,
+        "twStart" : 33702,
+        "twFinish" : 53916,
+        "arrivalTime" : 33050,
+        "bus" : "AAA1",
+        "prev" : "Studenti4",
+        "next" : {
+          "name" : "Studenti5",
+          "volume" : 14,
+          "visitType" : "STUDENT",
+          "location" : {
+            "lat" : 4.3946569605411545,
+            "lon" : 33.96745329240658
+          },
+          "studentList" : null,
+          "srvTime" : 600,
+          "twStart" : 30186,
+          "twFinish" : 51065,
+          "arrivalTime" : 35680,
+          "bus" : "AAA1",
+          "prev" : "Studenti3",
+          "next" : {
+            "name" : "Studenti1",
+            "volume" : 10,
+            "visitType" : "STUDENT",
+            "location" : {
+              "lat" : 2.2224796663565805,
+              "lon" : 58.05615016255856
+            },
+            "studentList" : null,
+            "srvTime" : 600,
+            "twStart" : 32559,
+            "twFinish" : 57453,
+            "arrivalTime" : 37247,
+            "bus" : "AAA1",
+            "prev" : "Studenti5",
+            "next" : {
+              "name" : "Studenti2",
+              "volume" : 0,
+              "visitType" : "STUDENT",
+              "location" : {
+                "lat" : 38.00268142353212,
+                "lon" : 69.72409841156096
+              },
+              "studentList" : null,
+              "srvTime" : 600,
+              "twStart" : 33404,
+              "twFinish" : 53919,
+              "arrivalTime" : 39352,
+              "bus" : "AAA1",
+              "prev" : "Studenti1",
+              "next" : {
+                "name" : "Skola3",
+                "volume" : 1000,
+                "visitType" : "SCHOOL",
+                "location" : {
+                  "lat" : 84.10808820218352,
+                  "lon" : 8.38401714916973
+                },
+                "studentList" : null,
+                "srvTime" : 900,
+                "twStart" : 21600,
+                "twFinish" : 86400,
+                "arrivalTime" : 43021,
+                "bus" : "AAA1",
+                "prev" : "Studenti2",
+                "next" : {
+                  "name" : "Skola2",
+                  "volume" : 1000,
+                  "visitType" : "SCHOOL",
+                  "location" : {
+                    "lat" : 84.10808820218352,
+                    "lon" : 8.38401714916973
+                  },
+                  "studentList" : null,
+                  "srvTime" : 900,
+                  "twStart" : 21600,
+                  "twFinish" : 86400,
+                  "arrivalTime" : 43921,
+                  "bus" : "AAA1",
+                  "prev" : "Skola3",
+                  "next" : {
+                    "name" : "Skola1",
+                    "volume" : 1000,
+                    "visitType" : "SCHOOL",
+                    "location" : {
+                      "lat" : 84.10808820218352,
+                      "lon" : 8.38401714916973
+                    },
+                    "studentList" : null,
+                    "srvTime" : 900,
+                    "twStart" : 21600,
+                    "twFinish" : 86400,
+                    "arrivalTime" : 44821,
+                    "bus" : "AAA1",
+                    "prev" : "Skola2",
+                    "next" : null,
+                    "undeliveredStudents" : 0,
+                    "pickedStudents" : 78
+                  },
+                  "undeliveredStudents" : 0,
+                  "pickedStudents" : 78
+                },
+                "undeliveredStudents" : 0,
+                "pickedStudents" : 78
+              },
+              "undeliveredStudents" : 78,
+              "pickedStudents" : 0
+            },
+            "undeliveredStudents" : 78,
+            "pickedStudents" : 0
+          },
+          "undeliveredStudents" : 68,
+          "pickedStudents" : 0
+        },
+        "undeliveredStudents" : 54,
+        "pickedStudents" : 0
+      },
+      "undeliveredStudents" : 6,
+      "pickedStudents" : 0
+    }, "Studenti3", "Studenti5", "Studenti1", "Studenti2", "Skola3", "Skola2", "Skola1" ],
+    "depot" : {
+      "lat" : 73.85186174894835,
+      "lon" : 38.83243591557852
+    },
+    "twStart" : 28800,
+    "twFinish" : 57600,
+    "srvSTime" : 900,
+    "srvFTime" : 900,
+    "maxWorkTime" : 28800,
+    "costWorkTime" : 7.0,
+    "costDistance" : 0.1,
+    "costUsage" : 30.0
+  } ],
+  "visitList" : [ "Studenti1", "Studenti2", "Studenti3", "Studenti4", "Studenti5", "Skola1", "Skola2", "Skola3" ],
+  "locationList" : [ {
+    "lat" : 73.85186174894835,
+    "lon" : 38.83243591557852
+  }, {
+    "lat" : 2.2224796663565805,
+    "lon" : 58.05615016255856
+  }, {
+    "lat" : 38.00268142353212,
+    "lon" : 69.72409841156096
+  }, {
+    "lat" : 27.48959878897156,
+    "lon" : 8.409127079505296
+  }, {
+    "lat" : 68.13403154818336,
+    "lon" : 6.207295225894194
+  }, {
+    "lat" : 4.3946569605411545,
+    "lon" : 33.96745329240658
+  }, {
+    "lat" : 84.10808820218352,
+    "lon" : 8.38401714916973
+  } ]
+}
