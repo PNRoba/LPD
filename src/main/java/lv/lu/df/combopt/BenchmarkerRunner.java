@@ -29,6 +29,12 @@ public class BenchmarkerRunner {
                 new File("data/test200.json"));
         schoolBusSolutionJsonIO.write(SchoolBusSolution.generateData(500),
                 new File("data/test500.json"));
+//        schoolBusSolutionJsonIO.write(SchoolBusSolution.generateData(1000),
+//                new File("data/test1000.json"));
+//        schoolBusSolutionJsonIO.write(SchoolBusSolution.generateData(2000),
+//                new File("data/test2000.json"));
+//        schoolBusSolutionJsonIO.write(SchoolBusSolution.generateData(5000),
+//                new File("data/test5000.json"));
 
 //
         PlannerBenchmark benchmark = benchmarkFactoryFromXML.buildPlannerBenchmark();

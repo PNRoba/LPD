@@ -20,7 +20,7 @@
       </monitoring>
       <solutionClass>lv.lu.df.combopt.domain.SchoolBusSolution</solutionClass>
       <entityClass>lv.lu.df.combopt.domain.Bus</entityClass>
-      <entityClass>lv.lu.df.combopt.domain.Visit</entityClass>
+      <entityClass>lv.lu.df.combopt.domain.BusStop</entityClass>
       <scoreDirectorFactory>
         <constraintProviderClass>lv.lu.df.combopt.solver.StreamCalculator</constraintProviderClass>
       </scoreDirectorFactory>

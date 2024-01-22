@@ -1,18 +1,15 @@
 package lv.lu.df.combopt.solver;
 import ai.timefold.solver.core.api.score.buildin.hardsoft.HardSoftScore;
 import ai.timefold.solver.core.api.score.constraint.ConstraintMatch;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lv.lu.df.combopt.domain.Bus;
-import lv.lu.df.combopt.domain.Visit;
+import lv.lu.df.combopt.domain.BusStop;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import static lv.lu.df.combopt.Main.LOGGER;
 
 @Setter @Getter
 public class SimpleIndictmentObject {
@@ -22,7 +19,7 @@ public class SimpleIndictmentObject {
     private List<SimpleConstraintMatch> constraintMatches = new ArrayList<>();
 
     public SimpleIndictmentObject(Object indictedObject, HardSoftScore score, int matchCount, Set<ConstraintMatch<HardSoftScore>> constraintMatches) {
-        this.indictedObjectID = indictedObject instanceof Visit ? ((Visit) indictedObject).getName() : ((Bus) indictedObject).getName();
+        this.indictedObjectID = indictedObject instanceof BusStop ? ((BusStop) indictedObject).getName() : ((Bus) indictedObject).getName();
         this.score = score;
         this.matchCount = matchCount;
         this.constraintMatches = constraintMatches.stream().map(constraintMatch -> {

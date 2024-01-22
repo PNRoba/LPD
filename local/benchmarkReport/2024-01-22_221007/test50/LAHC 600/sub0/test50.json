@@ -1,0 +1,3773 @@
+{
+  "solutionId" : "2",
+  "score" : "-13hard/-14413soft",
+  "busList" : [ {
+    "name" : "AAA1",
+    "capacity" : 456,
+    "busStopType" : null,
+    "busStops" : [ {
+      "name" : "Studenti10",
+      "volume" : 4,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 12.637941897261717,
+        "lon" : 62.475351159643424
+      },
+      "srvTime" : 240,
+      "twStart" : 30199,
+      "twFinish" : 52197,
+      "arrivalTime" : 30551,
+      "bus" : "AAA1",
+      "prev" : null,
+      "next" : "Studenti36",
+      "undeliveredStudents" : 4,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti10-1",
+        "school" : "Skola1",
+        "waitStart" : 24660,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti10-2",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti10-3",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti10-4",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      } ]
+    }, {
+      "name" : "Studenti36",
+      "volume" : 2,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 22.49077551843499,
+        "lon" : 72.60731714124192
+      },
+      "srvTime" : 120,
+      "twStart" : 28848,
+      "twFinish" : 57595,
+      "arrivalTime" : 31356,
+      "bus" : "AAA1",
+      "prev" : "Studenti10",
+      "next" : "Studenti30",
+      "undeliveredStudents" : 6,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti36-1",
+        "school" : "Skola2",
+        "waitStart" : 24840,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti36-2",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      } ]
+    }, {
+      "name" : "Studenti30",
+      "volume" : 8,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 31.6878520781124,
+        "lon" : 83.03891226574184
+      },
+      "srvTime" : 480,
+      "twStart" : 29490,
+      "twFinish" : 51401,
+      "arrivalTime" : 32032,
+      "bus" : "AAA1",
+      "prev" : "Studenti36",
+      "next" : "Studenti24",
+      "undeliveredStudents" : 14,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti30-1",
+        "school" : "Skola2",
+        "waitStart" : 24300,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti30-2",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti30-3",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti30-4",
+        "school" : "Skola1",
+        "waitStart" : 24240,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti30-5",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti30-6",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti30-7",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti30-8",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      } ]
+    }, {
+      "name" : "Studenti24",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 5.914332369069985,
+        "lon" : 81.86201298775093
+      },
+      "srvTime" : 540,
+      "twStart" : 33496,
+      "twFinish" : 55430,
+      "arrivalTime" : 33544,
+      "bus" : "AAA1",
+      "prev" : "Studenti30",
+      "next" : "Studenti4",
+      "undeliveredStudents" : 23,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti24-1",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti24-2",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti24-3",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti24-4",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti24-5",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti24-6",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti24-7",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti24-8",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti24-9",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      } ]
+    }, {
+      "name" : "Studenti4",
+      "volume" : 2,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 20.559414635085094,
+        "lon" : 69.56565480961527
+      },
+      "srvTime" : 120,
+      "twStart" : 35069,
+      "twFinish" : 52262,
+      "arrivalTime" : 34849,
+      "bus" : "AAA1",
+      "prev" : "Studenti24",
+      "next" : "Studenti35",
+      "undeliveredStudents" : 25,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti4-1",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti4-2",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      } ]
+    }, {
+      "name" : "Studenti35",
+      "volume" : 11,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 19.269970651130063,
+        "lon" : 95.17680005223215
+      },
+      "srvTime" : 660,
+      "twStart" : 31192,
+      "twFinish" : 51590,
+      "arrivalTime" : 36215,
+      "bus" : "AAA1",
+      "prev" : "Studenti4",
+      "next" : "Studenti43",
+      "undeliveredStudents" : 36,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti35-1",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti35-2",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti35-3",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti35-4",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti35-5",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti35-6",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti35-7",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti35-8",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti35-9",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti35-10",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti35-11",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      } ]
+    }, {
+      "name" : "Studenti43",
+      "volume" : 13,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 26.47289213929015,
+        "lon" : 81.46455600328238
+      },
+      "srvTime" : 780,
+      "twStart" : 30134,
+      "twFinish" : 51453,
+      "arrivalTime" : 37495,
+      "bus" : "AAA1",
+      "prev" : "Studenti35",
+      "next" : "Studenti23",
+      "undeliveredStudents" : 49,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti43-1",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti43-2",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti43-3",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti43-4",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti43-5",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti43-6",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti43-7",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti43-8",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti43-9",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti43-10",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti43-11",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti43-12",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti43-13",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      } ]
+    }, {
+      "name" : "Studenti23",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 71.9044954136298,
+        "lon" : 97.51448120458052
+      },
+      "srvTime" : 420,
+      "twStart" : 32549,
+      "twFinish" : 56829,
+      "arrivalTime" : 40202,
+      "bus" : "AAA1",
+      "prev" : "Studenti43",
+      "next" : "Studenti14",
+      "undeliveredStudents" : 56,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti23-1",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti23-2",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti23-3",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti23-4",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti23-5",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti23-6",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti23-7",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      } ]
+    }, {
+      "name" : "Studenti14",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 67.2888393096098,
+        "lon" : 58.94246130826563
+      },
+      "srvTime" : 540,
+      "twStart" : 33082,
+      "twFinish" : 57174,
+      "arrivalTime" : 42176,
+      "bus" : "AAA1",
+      "prev" : "Studenti23",
+      "next" : "Studenti1",
+      "undeliveredStudents" : 65,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti14-1",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti14-2",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti14-3",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti14-4",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti14-5",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti14-6",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti14-7",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti14-8",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti14-9",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      } ]
+    }, {
+      "name" : "Studenti1",
+      "volume" : 12,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 82.59029466166938,
+        "lon" : 37.31049567277614
+      },
+      "srvTime" : 720,
+      "twStart" : 30770,
+      "twFinish" : 55766,
+      "arrivalTime" : 43776,
+      "bus" : "AAA1",
+      "prev" : "Studenti14",
+      "next" : "Studenti34",
+      "undeliveredStudents" : 77,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti1-1",
+        "school" : "Skola1",
+        "waitStart" : 24240,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti1-2",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti1-3",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti1-4",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti1-5",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti1-6",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti1-7",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti1-8",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti1-9",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti1-10",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti1-11",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti1-12",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      } ]
+    }, {
+      "name" : "Studenti34",
+      "volume" : 8,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 98.60817227197883,
+        "lon" : 24.677696697194364
+      },
+      "srvTime" : 480,
+      "twStart" : 29039,
+      "twFinish" : 56428,
+      "arrivalTime" : 45312,
+      "bus" : "AAA1",
+      "prev" : "Studenti1",
+      "next" : "Studenti25",
+      "undeliveredStudents" : 85,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti34-1",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti34-2",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti34-3",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti34-4",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti34-5",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti34-6",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti34-7",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti34-8",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      } ]
+    }, {
+      "name" : "Studenti25",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 84.14465941313047,
+        "lon" : 30.513893171376527
+      },
+      "srvTime" : 300,
+      "twStart" : 33388,
+      "twFinish" : 53505,
+      "arrivalTime" : 46416,
+      "bus" : "AAA1",
+      "prev" : "Studenti34",
+      "next" : "Studenti48",
+      "undeliveredStudents" : 90,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti25-1",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti25-2",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti25-3",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti25-4",
+        "school" : "Skola1",
+        "waitStart" : 24240,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti25-5",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      } ]
+    }, {
+      "name" : "Studenti48",
+      "volume" : 2,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 22.12314542437359,
+        "lon" : 23.231007956426552
+      },
+      "srvTime" : 120,
+      "twStart" : 34049,
+      "twFinish" : 52769,
+      "arrivalTime" : 49214,
+      "bus" : "AAA1",
+      "prev" : "Studenti25",
+      "next" : "Studenti13",
+      "undeliveredStudents" : 92,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti48-1",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti48-2",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      } ]
+    }, {
+      "name" : "Studenti13",
+      "volume" : 12,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 38.48263805667711,
+        "lon" : 29.128481874763178
+      },
+      "srvTime" : 720,
+      "twStart" : 33684,
+      "twFinish" : 51570,
+      "arrivalTime" : 50030,
+      "bus" : "AAA1",
+      "prev" : "Studenti48",
+      "next" : "Studenti16",
+      "undeliveredStudents" : 104,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti13-1",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti13-2",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti13-3",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti13-4",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti13-5",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti13-6",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti13-7",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti13-8",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti13-9",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti13-10",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti13-11",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti13-12",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      } ]
+    }, {
+      "name" : "Studenti16",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 12.926354517725514,
+        "lon" : 41.780325265004215
+      },
+      "srvTime" : 420,
+      "twStart" : 32351,
+      "twFinish" : 53097,
+      "arrivalTime" : 51891,
+      "bus" : "AAA1",
+      "prev" : "Studenti13",
+      "next" : "Studenti44",
+      "undeliveredStudents" : 111,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti16-1",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti16-2",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti16-3",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti16-4",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti16-5",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti16-6",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti16-7",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      } ]
+    }, {
+      "name" : "Studenti44",
+      "volume" : 13,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 14.508932735324919,
+        "lon" : 11.861258323288837
+      },
+      "srvTime" : 780,
+      "twStart" : 31499,
+      "twFinish" : 55324,
+      "arrivalTime" : 53509,
+      "bus" : "AAA1",
+      "prev" : "Studenti16",
+      "next" : "Skola1-3",
+      "undeliveredStudents" : 124,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti44-1",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti44-2",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti44-3",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti44-4",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti44-5",
+        "school" : "Skola2",
+        "waitStart" : 24900,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti44-6",
+        "school" : "Skola2",
+        "waitStart" : 24840,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti44-7",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti44-8",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti44-9",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti44-10",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti44-11",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti44-12",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti44-13",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      } ]
+    }, {
+      "name" : "Skola1-3",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 4.5387101264729885,
+        "lon" : 2.5644715168449794
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 54834,
+      "bus" : "AAA1",
+      "prev" : "Studenti44",
+      "next" : null,
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 124,
+      "studentList" : [ ]
+    } ],
+    "depot" : {
+      "lat" : 2.0503634803341053,
+      "lon" : 26.202915893693234
+    },
+    "twStart" : 28800,
+    "twFinish" : 57600,
+    "srvSTime" : 900,
+    "srvFTime" : 900,
+    "maxWorkTime" : 28800,
+    "costWorkTime" : 7.0,
+    "costDistance" : 0.1,
+    "costUsage" : 30.0
+  }, {
+    "name" : "AAA2",
+    "capacity" : 498,
+    "busStopType" : null,
+    "busStops" : [ {
+      "name" : "Studenti17",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 53.021119883840065,
+        "lon" : 92.11427711863695
+      },
+      "srvTime" : 300,
+      "twStart" : 32854,
+      "twFinish" : 53533,
+      "arrivalTime" : 29894,
+      "bus" : "AAA2",
+      "prev" : null,
+      "next" : "Studenti28",
+      "undeliveredStudents" : 5,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti17-1",
+        "school" : "Skola2",
+        "waitStart" : 24300,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti17-2",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti17-3",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti17-4",
+        "school" : "Skola1",
+        "waitStart" : 24660,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti17-5",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      } ]
+    }, {
+      "name" : "Studenti28",
+      "volume" : 3,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 23.965615237682236,
+        "lon" : 89.30985081676617
+      },
+      "srvTime" : 180,
+      "twStart" : 29810,
+      "twFinish" : 54703,
+      "arrivalTime" : 34322,
+      "bus" : "AAA2",
+      "prev" : "Studenti17",
+      "next" : "Studenti46",
+      "undeliveredStudents" : 8,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti28-1",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti28-2",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti28-3",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      } ]
+    }, {
+      "name" : "Studenti46",
+      "volume" : 8,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 71.81921596794598,
+        "lon" : 74.32837454479933
+      },
+      "srvTime" : 480,
+      "twStart" : 30163,
+      "twFinish" : 55215,
+      "arrivalTime" : 36508,
+      "bus" : "AAA2",
+      "prev" : "Studenti28",
+      "next" : "Studenti37",
+      "undeliveredStudents" : 16,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti46-1",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti46-2",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti46-3",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti46-4",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti46-5",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti46-6",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti46-7",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti46-8",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      } ]
+    }, {
+      "name" : "Studenti37",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 96.4650621099385,
+        "lon" : 70.94826898574617
+      },
+      "srvTime" : 540,
+      "twStart" : 33573,
+      "twFinish" : 53894,
+      "arrivalTime" : 37983,
+      "bus" : "AAA2",
+      "prev" : "Studenti46",
+      "next" : "Studenti11",
+      "undeliveredStudents" : 25,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti37-1",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti37-2",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti37-3",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti37-4",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti37-5",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti37-6",
+        "school" : "Skola2",
+        "waitStart" : 24900,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti37-7",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti37-8",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti37-9",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      } ]
+    }, {
+      "name" : "Studenti11",
+      "volume" : 11,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 85.97511932403451,
+        "lon" : 75.86632996868036
+      },
+      "srvTime" : 660,
+      "twStart" : 33519,
+      "twFinish" : 54232,
+      "arrivalTime" : 38986,
+      "bus" : "AAA2",
+      "prev" : "Studenti37",
+      "next" : "Studenti32",
+      "undeliveredStudents" : 36,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti11-1",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti11-2",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti11-3",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti11-4",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti11-5",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti11-6",
+        "school" : "Skola2",
+        "waitStart" : 24900,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti11-7",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti11-8",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti11-9",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti11-10",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti11-11",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      } ]
+    }, {
+      "name" : "Studenti32",
+      "volume" : 11,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 73.4925547497728,
+        "lon" : 76.30714485176765
+      },
+      "srvTime" : 660,
+      "twStart" : 30244,
+      "twFinish" : 53992,
+      "arrivalTime" : 40146,
+      "bus" : "AAA2",
+      "prev" : "Studenti11",
+      "next" : "Studenti41",
+      "undeliveredStudents" : 47,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti32-1",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti32-2",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti32-3",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti32-4",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti32-5",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti32-6",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti32-7",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti32-8",
+        "school" : "Skola1",
+        "waitStart" : 24240,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti32-9",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti32-10",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti32-11",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      } ]
+    }, {
+      "name" : "Studenti41",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 59.807499516093884,
+        "lon" : 89.70038454007262
+      },
+      "srvTime" : 420,
+      "twStart" : 32821,
+      "twFinish" : 57316,
+      "arrivalTime" : 41572,
+      "bus" : "AAA2",
+      "prev" : "Studenti32",
+      "next" : "Studenti47",
+      "undeliveredStudents" : 54,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti41-1",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti41-2",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti41-3",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti41-4",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti41-5",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti41-6",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti41-7",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      } ]
+    }, {
+      "name" : "Studenti47",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 76.07199375066558,
+        "lon" : 56.5597250010724
+      },
+      "srvTime" : 300,
+      "twStart" : 35230,
+      "twFinish" : 56133,
+      "arrivalTime" : 43469,
+      "bus" : "AAA2",
+      "prev" : "Studenti41",
+      "next" : "Studenti45",
+      "undeliveredStudents" : 59,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti47-1",
+        "school" : "Skola2",
+        "waitStart" : 24840,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti47-2",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti47-3",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti47-4",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti47-5",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      } ]
+    }, {
+      "name" : "Studenti45",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 73.6449405358406,
+        "lon" : 18.74487429483258
+      },
+      "srvTime" : 540,
+      "twStart" : 31224,
+      "twFinish" : 54032,
+      "arrivalTime" : 45285,
+      "bus" : "AAA2",
+      "prev" : "Studenti47",
+      "next" : "Studenti39",
+      "undeliveredStudents" : 68,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti45-1",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti45-2",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti45-3",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti45-4",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti45-5",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti45-6",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti45-7",
+        "school" : "Skola1",
+        "waitStart" : 24660,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti45-8",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti45-9",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      } ]
+    }, {
+      "name" : "Studenti39",
+      "volume" : 11,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 72.87802682077016,
+        "lon" : 18.062781225285683
+      },
+      "srvTime" : 660,
+      "twStart" : 33852,
+      "twFinish" : 55838,
+      "arrivalTime" : 45866,
+      "bus" : "AAA2",
+      "prev" : "Studenti45",
+      "next" : "Studenti27",
+      "undeliveredStudents" : 79,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti39-1",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti39-2",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti39-3",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti39-4",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti39-5",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti39-6",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti39-7",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti39-8",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti39-9",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti39-10",
+        "school" : "Skola2",
+        "waitStart" : 24300,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti39-11",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      } ]
+    }, {
+      "name" : "Studenti27",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 42.09800459380706,
+        "lon" : 35.328678915269506
+      },
+      "srvTime" : 300,
+      "twStart" : 29308,
+      "twFinish" : 57565,
+      "arrivalTime" : 47938,
+      "bus" : "AAA2",
+      "prev" : "Studenti39",
+      "next" : "Studenti26",
+      "undeliveredStudents" : 84,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti27-1",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti27-2",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti27-3",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti27-4",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti27-5",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      } ]
+    }, {
+      "name" : "Studenti26",
+      "volume" : 8,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 75.66087480477964,
+        "lon" : 11.265399995289604
+      },
+      "srvTime" : 480,
+      "twStart" : 34562,
+      "twFinish" : 51445,
+      "arrivalTime" : 49890,
+      "bus" : "AAA2",
+      "prev" : "Studenti27",
+      "next" : "Studenti7",
+      "undeliveredStudents" : 92,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti26-1",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti26-2",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti26-3",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti26-4",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti26-5",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti26-6",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti26-7",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti26-8",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      } ]
+    }, {
+      "name" : "Studenti7",
+      "volume" : 6,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 87.03769752355339,
+        "lon" : 3.037166550817827
+      },
+      "srvTime" : 360,
+      "twStart" : 35660,
+      "twFinish" : 50555,
+      "arrivalTime" : 50932,
+      "bus" : "AAA2",
+      "prev" : "Studenti26",
+      "next" : "Studenti40",
+      "undeliveredStudents" : 98,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti7-1",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti7-2",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti7-3",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti7-4",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti7-5",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti7-6",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      } ]
+    }, {
+      "name" : "Studenti40",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 47.27311511481393,
+        "lon" : 24.71017273616831
+      },
+      "srvTime" : 420,
+      "twStart" : 34229,
+      "twFinish" : 54432,
+      "arrivalTime" : 53103,
+      "bus" : "AAA2",
+      "prev" : "Studenti7",
+      "next" : "Studenti8",
+      "undeliveredStudents" : 105,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti40-1",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti40-2",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti40-3",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti40-4",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti40-5",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti40-6",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti40-7",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      } ]
+    }, {
+      "name" : "Studenti8",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 41.65933821665264,
+        "lon" : 27.930208344828344
+      },
+      "srvTime" : 300,
+      "twStart" : 31270,
+      "twFinish" : 56828,
+      "arrivalTime" : 53782,
+      "bus" : "AAA2",
+      "prev" : "Studenti40",
+      "next" : "Studenti20",
+      "undeliveredStudents" : 110,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti8-1",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti8-2",
+        "school" : "Skola2",
+        "waitStart" : 24840,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti8-3",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti8-4",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti8-5",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      } ]
+    }, {
+      "name" : "Studenti20",
+      "volume" : 10,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 6.430063759053429,
+        "lon" : 1.1303775322611065
+      },
+      "srvTime" : 600,
+      "twStart" : 29612,
+      "twFinish" : 55571,
+      "arrivalTime" : 55853,
+      "bus" : "AAA2",
+      "prev" : "Studenti8",
+      "next" : "Skola1-1",
+      "undeliveredStudents" : 120,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti20-1",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti20-2",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti20-3",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti20-4",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti20-5",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti20-6",
+        "school" : "Skola2",
+        "waitStart" : 25080,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti20-7",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti20-8",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti20-9",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti20-10",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      } ]
+    }, {
+      "name" : "Skola1-1",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 4.5387101264729885,
+        "lon" : 2.5644715168449794
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 56548,
+      "bus" : "AAA2",
+      "prev" : "Studenti20",
+      "next" : null,
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 120,
+      "studentList" : [ ]
+    } ],
+    "depot" : {
+      "lat" : 45.42523605157784,
+      "lon" : 73.78147781578035
+    },
+    "twStart" : 28800,
+    "twFinish" : 57600,
+    "srvSTime" : 900,
+    "srvFTime" : 900,
+    "maxWorkTime" : 28800,
+    "costWorkTime" : 7.0,
+    "costDistance" : 0.1,
+    "costUsage" : 30.0
+  }, {
+    "name" : "AAA3",
+    "capacity" : 518,
+    "busStopType" : null,
+    "busStops" : [ {
+      "name" : "Studenti29",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 45.39249878045272,
+        "lon" : 36.49947854475647
+      },
+      "srvTime" : 540,
+      "twStart" : 30462,
+      "twFinish" : 50722,
+      "arrivalTime" : 31622,
+      "bus" : "AAA3",
+      "prev" : null,
+      "next" : "Skola2-3",
+      "undeliveredStudents" : 9,
+      "deliveredStudents" : 0,
+      "studentList" : [ {
+        "name" : "st-Studenti29-1",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti29-2",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti29-3",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti29-4",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti29-5",
+        "school" : "Skola1",
+        "waitStart" : 24900,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti29-6",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti29-7",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti29-8",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti29-9",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      } ]
+    }, {
+      "name" : "Skola2-3",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 68.83822389472802,
+        "lon" : 25.68768132524959
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 33195,
+      "bus" : "AAA3",
+      "prev" : "Studenti29",
+      "next" : "Skola2-1",
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 9,
+      "studentList" : [ ]
+    }, {
+      "name" : "Skola2-1",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 68.83822389472802,
+        "lon" : 25.68768132524959
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 34095,
+      "bus" : "AAA3",
+      "prev" : "Skola2-3",
+      "next" : "Studenti18",
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 9,
+      "studentList" : [ ]
+    }, {
+      "name" : "Studenti18",
+      "volume" : 10,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 43.59883872307816,
+        "lon" : 63.16366960208566
+      },
+      "srvTime" : 600,
+      "twStart" : 35278,
+      "twFinish" : 53568,
+      "arrivalTime" : 36802,
+      "bus" : "AAA3",
+      "prev" : "Skola2-1",
+      "next" : "Studenti2",
+      "undeliveredStudents" : 10,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti18-1",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti18-2",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti18-3",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti18-4",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti18-5",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti18-6",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti18-7",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti18-8",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti18-9",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti18-10",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      } ]
+    }, {
+      "name" : "Studenti2",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 68.28788423529424,
+        "lon" : 21.21547531727268
+      },
+      "srvTime" : 300,
+      "twStart" : 34337,
+      "twFinish" : 51129,
+      "arrivalTime" : 39349,
+      "bus" : "AAA3",
+      "prev" : "Studenti18",
+      "next" : "Studenti19",
+      "undeliveredStudents" : 15,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti2-1",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti2-2",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti2-3",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti2-4",
+        "school" : "Skola2",
+        "waitStart" : 24900,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti2-5",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      } ]
+    }, {
+      "name" : "Studenti19",
+      "volume" : 4,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 60.29107272478414,
+        "lon" : 22.84620707872065
+      },
+      "srvTime" : 240,
+      "twStart" : 33539,
+      "twFinish" : 53450,
+      "arrivalTime" : 39975,
+      "bus" : "AAA3",
+      "prev" : "Studenti2",
+      "next" : "Studenti38",
+      "undeliveredStudents" : 19,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti19-1",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti19-2",
+        "school" : "Skola2",
+        "waitStart" : 24720,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti19-3",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti19-4",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      } ]
+    }, {
+      "name" : "Studenti38",
+      "volume" : 2,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 58.86230516446147,
+        "lon" : 14.471541900569528
+      },
+      "srvTime" : 120,
+      "twStart" : 32483,
+      "twFinish" : 54056,
+      "arrivalTime" : 40555,
+      "bus" : "AAA3",
+      "prev" : "Studenti19",
+      "next" : "Studenti15",
+      "undeliveredStudents" : 21,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti38-1",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti38-2",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      } ]
+    }, {
+      "name" : "Studenti15",
+      "volume" : 6,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 44.04500978422076,
+        "lon" : 13.691444994844792
+      },
+      "srvTime" : 360,
+      "twStart" : 32208,
+      "twFinish" : 55576,
+      "arrivalTime" : 41269,
+      "bus" : "AAA3",
+      "prev" : "Studenti38",
+      "next" : "Studenti50",
+      "undeliveredStudents" : 27,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti15-1",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti15-2",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti15-3",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti15-4",
+        "school" : "Skola1",
+        "waitStart" : 24660,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti15-5",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti15-6",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      } ]
+    }, {
+      "name" : "Studenti50",
+      "volume" : 10,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 7.899683881019914,
+        "lon" : 4.7875459930445174
+      },
+      "srvTime" : 600,
+      "twStart" : 33281,
+      "twFinish" : 54769,
+      "arrivalTime" : 43118,
+      "bus" : "AAA3",
+      "prev" : "Studenti15",
+      "next" : "Studenti5",
+      "undeliveredStudents" : 37,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti50-1",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti50-2",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti50-3",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti50-4",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti50-5",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti50-6",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti50-7",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti50-8",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1380
+      }, {
+        "name" : "st-Studenti50-9",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti50-10",
+        "school" : "Skola1",
+        "waitStart" : 24060,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      } ]
+    }, {
+      "name" : "Studenti5",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 28.85808759561399,
+        "lon" : 4.089031748584038
+      },
+      "srvTime" : 420,
+      "twStart" : 33859,
+      "twFinish" : 53449,
+      "arrivalTime" : 44557,
+      "bus" : "AAA3",
+      "prev" : "Studenti50",
+      "next" : "Studenti12",
+      "undeliveredStudents" : 44,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti5-1",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti5-2",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti5-3",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti5-4",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti5-5",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti5-6",
+        "school" : "Skola1",
+        "waitStart" : 24780,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti5-7",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      } ]
+    }, {
+      "name" : "Studenti12",
+      "volume" : 14,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 29.32799253918158,
+        "lon" : 8.55384853594673
+      },
+      "srvTime" : 840,
+      "twStart" : 35580,
+      "twFinish" : 51591,
+      "arrivalTime" : 45157,
+      "bus" : "AAA3",
+      "prev" : "Studenti5",
+      "next" : "Studenti3",
+      "undeliveredStudents" : 58,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti12-1",
+        "school" : "Skola1",
+        "waitStart" : 24960,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti12-2",
+        "school" : "Skola2",
+        "waitStart" : 24960,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti12-3",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti12-4",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti12-5",
+        "school" : "Skola1",
+        "waitStart" : 24360,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti12-6",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti12-7",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti12-8",
+        "school" : "Skola2",
+        "waitStart" : 24600,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti12-9",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti12-10",
+        "school" : "Skola1",
+        "waitStart" : 25080,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti12-11",
+        "school" : "Skola2",
+        "waitStart" : 24300,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti12-12",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti12-13",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti12-14",
+        "school" : "Skola2",
+        "waitStart" : 25020,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      } ]
+    }, {
+      "name" : "Studenti3",
+      "volume" : 8,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 0.804415292319105,
+        "lon" : 2.3868517178504023
+      },
+      "srvTime" : 480,
+      "twStart" : 33342,
+      "twFinish" : 51887,
+      "arrivalTime" : 47164,
+      "bus" : "AAA3",
+      "prev" : "Studenti12",
+      "next" : "Studenti31",
+      "undeliveredStudents" : 66,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti3-1",
+        "school" : "Skola1",
+        "waitStart" : 24720,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti3-2",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 780,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti3-3",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti3-4",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti3-5",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti3-6",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      }, {
+        "name" : "st-Studenti3-7",
+        "school" : "Skola1",
+        "waitStart" : 24840,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti3-8",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      } ]
+    }, {
+      "name" : "Studenti31",
+      "volume" : 5,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 15.504343335862602,
+        "lon" : 5.582471653385735
+      },
+      "srvTime" : 300,
+      "twStart" : 29145,
+      "twFinish" : 52435,
+      "arrivalTime" : 48246,
+      "bus" : "AAA3",
+      "prev" : "Studenti3",
+      "next" : "Studenti9",
+      "undeliveredStudents" : 71,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti31-1",
+        "school" : "Skola2",
+        "waitStart" : 24240,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti31-2",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti31-3",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti31-4",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti31-5",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      } ]
+    }, {
+      "name" : "Studenti9",
+      "volume" : 3,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 30.5521392262848,
+        "lon" : 6.228352472907894
+      },
+      "srvTime" : 180,
+      "twStart" : 33845,
+      "twFinish" : 55342,
+      "arrivalTime" : 49148,
+      "bus" : "AAA3",
+      "prev" : "Studenti31",
+      "next" : "Studenti6",
+      "undeliveredStudents" : 74,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti9-1",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti9-2",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti9-3",
+        "school" : "Skola2",
+        "waitStart" : 24300,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      } ]
+    }, {
+      "name" : "Studenti6",
+      "volume" : 6,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 53.43070703880297,
+        "lon" : 1.3810707351061713
+      },
+      "srvTime" : 360,
+      "twStart" : 35901,
+      "twFinish" : 55341,
+      "arrivalTime" : 50263,
+      "bus" : "AAA3",
+      "prev" : "Studenti9",
+      "next" : "Studenti33",
+      "undeliveredStudents" : 80,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti6-1",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti6-2",
+        "school" : "Skola1",
+        "waitStart" : 24600,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti6-3",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 600,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti6-4",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti6-5",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti6-6",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 660,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      } ]
+    }, {
+      "name" : "Studenti33",
+      "volume" : 9,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 2.1030006050429817,
+        "lon" : 51.31197936476646
+      },
+      "srvTime" : 540,
+      "twStart" : 33710,
+      "twFinish" : 55833,
+      "arrivalTime" : 53487,
+      "bus" : "AAA3",
+      "prev" : "Studenti6",
+      "next" : "Studenti49",
+      "undeliveredStudents" : 89,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti33-1",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti33-2",
+        "school" : "Skola1",
+        "waitStart" : 24240,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 900
+      }, {
+        "name" : "st-Studenti33-3",
+        "school" : "Skola1",
+        "waitStart" : 24300,
+        "maxWait" : 360,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 780
+      }, {
+        "name" : "st-Studenti33-4",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1500
+      }, {
+        "name" : "st-Studenti33-5",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 660
+      }, {
+        "name" : "st-Studenti33-6",
+        "school" : "Skola1",
+        "waitStart" : 24540,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1440
+      }, {
+        "name" : "st-Studenti33-7",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti33-8",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1740
+      }, {
+        "name" : "st-Studenti33-9",
+        "school" : "Skola1",
+        "waitStart" : 25200,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      } ]
+    }, {
+      "name" : "Studenti49",
+      "volume" : 6,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 39.21343998484627,
+        "lon" : 29.793661897396127
+      },
+      "srvTime" : 360,
+      "twStart" : 35094,
+      "twFinish" : 57248,
+      "arrivalTime" : 55743,
+      "bus" : "AAA3",
+      "prev" : "Studenti33",
+      "next" : "Studenti42",
+      "undeliveredStudents" : 95,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti49-1",
+        "school" : "Skola2",
+        "waitStart" : 24420,
+        "maxWait" : 480,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1620
+      }, {
+        "name" : "st-Studenti49-2",
+        "school" : "Skola2",
+        "waitStart" : 24540,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1020
+      }, {
+        "name" : "st-Studenti49-3",
+        "school" : "Skola2",
+        "waitStart" : 24480,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti49-4",
+        "school" : "Skola1",
+        "waitStart" : 25020,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti49-5",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1680
+      }, {
+        "name" : "st-Studenti49-6",
+        "school" : "Skola2",
+        "waitStart" : 24180,
+        "maxWait" : 960,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      } ]
+    }, {
+      "name" : "Studenti42",
+      "volume" : 7,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 28.84151556682122,
+        "lon" : 26.582893046432034
+      },
+      "srvTime" : 420,
+      "twStart" : 30865,
+      "twFinish" : 50482,
+      "arrivalTime" : 56537,
+      "bus" : "AAA3",
+      "prev" : "Studenti49",
+      "next" : "Studenti22",
+      "undeliveredStudents" : 102,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti42-1",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti42-2",
+        "school" : "Skola1",
+        "waitStart" : 24120,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti42-3",
+        "school" : "Skola1",
+        "waitStart" : 24420,
+        "maxWait" : 840,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti42-4",
+        "school" : "Skola2",
+        "waitStart" : 24660,
+        "maxWait" : 900,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 960
+      }, {
+        "name" : "st-Studenti42-5",
+        "school" : "Skola2",
+        "waitStart" : 25200,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1320
+      }, {
+        "name" : "st-Studenti42-6",
+        "school" : "Skola2",
+        "waitStart" : 25140,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 840
+      }, {
+        "name" : "st-Studenti42-7",
+        "school" : "Skola1",
+        "waitStart" : 24180,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 600
+      } ]
+    }, {
+      "name" : "Studenti22",
+      "volume" : 6,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 56.14131601946756,
+        "lon" : 32.15674285719822
+      },
+      "srvTime" : 360,
+      "twStart" : 29715,
+      "twFinish" : 53686,
+      "arrivalTime" : 58072,
+      "bus" : "AAA3",
+      "prev" : "Studenti42",
+      "next" : "Studenti21",
+      "undeliveredStudents" : 108,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti22-1",
+        "school" : "Skola1",
+        "waitStart" : 25140,
+        "maxWait" : 300,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1140
+      }, {
+        "name" : "st-Studenti22-2",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 420,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1260
+      }, {
+        "name" : "st-Studenti22-3",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 1140,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1080
+      }, {
+        "name" : "st-Studenti22-4",
+        "school" : "Skola2",
+        "waitStart" : 24780,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 720
+      }, {
+        "name" : "st-Studenti22-5",
+        "school" : "Skola2",
+        "waitStart" : 24360,
+        "maxWait" : 540,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1560
+      }, {
+        "name" : "st-Studenti22-6",
+        "school" : "Skola2",
+        "waitStart" : 24120,
+        "maxWait" : 1080,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      } ]
+    }, {
+      "name" : "Studenti21",
+      "volume" : 2,
+      "busStopType" : "STUDENT",
+      "location" : {
+        "lat" : 4.358909890146478,
+        "lon" : 68.42267183025479
+      },
+      "srvTime" : 120,
+      "twStart" : 34619,
+      "twFinish" : 53654,
+      "arrivalTime" : 60961,
+      "bus" : "AAA3",
+      "prev" : "Studenti22",
+      "next" : "Skola2-2",
+      "undeliveredStudents" : 110,
+      "deliveredStudents" : 9,
+      "studentList" : [ {
+        "name" : "st-Studenti21-1",
+        "school" : "Skola2",
+        "waitStart" : 24060,
+        "maxWait" : 720,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      }, {
+        "name" : "st-Studenti21-2",
+        "school" : "Skola1",
+        "waitStart" : 24480,
+        "maxWait" : 1020,
+        "firstLectureTime" : 28800,
+        "prefTimeLength" : 1200
+      } ]
+    }, {
+      "name" : "Skola2-2",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 68.83822389472802,
+        "lon" : 25.68768132524959
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 64175,
+      "bus" : "AAA3",
+      "prev" : "Studenti21",
+      "next" : "Skola1-2",
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 119,
+      "studentList" : [ ]
+    }, {
+      "name" : "Skola1-2",
+      "volume" : 1000,
+      "busStopType" : "SCHOOL",
+      "location" : {
+        "lat" : 4.5387101264729885,
+        "lon" : 2.5644715168449794
+      },
+      "srvTime" : 900,
+      "twStart" : 21600,
+      "twFinish" : 86400,
+      "arrivalTime" : 67808,
+      "bus" : "AAA3",
+      "prev" : "Skola2-2",
+      "next" : null,
+      "undeliveredStudents" : 0,
+      "deliveredStudents" : 119,
+      "studentList" : [ ]
+    } ],
+    "depot" : {
+      "lat" : 69.9469157406965,
+      "lon" : 87.98460467418955
+    },
+    "twStart" : 28800,
+    "twFinish" : 57600,
+    "srvSTime" : 900,
+    "srvFTime" : 900,
+    "maxWorkTime" : 28800,
+    "costWorkTime" : 7.0,
+    "costDistance" : 0.1,
+    "costUsage" : 30.0
+  } ],
+  "busStopList" : [ "Studenti1", "Studenti2", "Studenti3", "Studenti4", "Studenti5", "Studenti6", "Studenti7", "Studenti8", "Studenti9", "Studenti10", "Studenti11", "Studenti12", "Studenti13", "Studenti14", "Studenti15", "Studenti16", "Studenti17", "Studenti18", "Studenti19", "Studenti20", "Studenti21", "Studenti22", "Studenti23", "Studenti24", "Studenti25", "Studenti26", "Studenti27", "Studenti28", "Studenti29", "Studenti30", "Studenti31", "Studenti32", "Studenti33", "Studenti34", "Studenti35", "Studenti36", "Studenti37", "Studenti38", "Studenti39", "Studenti40", "Studenti41", "Studenti42", "Studenti43", "Studenti44", "Studenti45", "Studenti46", "Studenti47", "Studenti48", "Studenti49", "Studenti50", "Skola1-1", "Skola1-2", "Skola1-3", "Skola2-1", "Skola2-2", "Skola2-3" ],
+  "schoolList" : [ "Skola1-1", "Skola1-2", "Skola1-3", "Skola2-1", "Skola2-2", "Skola2-3" ],
+  "locationList" : [ {
+    "lat" : 2.0503634803341053,
+    "lon" : 26.202915893693234
+  }, {
+    "lat" : 45.42523605157784,
+    "lon" : 73.78147781578035
+  }, {
+    "lat" : 69.9469157406965,
+    "lon" : 87.98460467418955
+  }, {
+    "lat" : 82.59029466166938,
+    "lon" : 37.31049567277614
+  }, {
+    "lat" : 68.28788423529424,
+    "lon" : 21.21547531727268
+  }, {
+    "lat" : 0.804415292319105,
+    "lon" : 2.3868517178504023
+  }, {
+    "lat" : 20.559414635085094,
+    "lon" : 69.56565480961527
+  }, {
+    "lat" : 28.85808759561399,
+    "lon" : 4.089031748584038
+  }, {
+    "lat" : 53.43070703880297,
+    "lon" : 1.3810707351061713
+  }, {
+    "lat" : 87.03769752355339,
+    "lon" : 3.037166550817827
+  }, {
+    "lat" : 41.65933821665264,
+    "lon" : 27.930208344828344
+  }, {
+    "lat" : 30.5521392262848,
+    "lon" : 6.228352472907894
+  }, {
+    "lat" : 12.637941897261717,
+    "lon" : 62.475351159643424
+  }, {
+    "lat" : 85.97511932403451,
+    "lon" : 75.86632996868036
+  }, {
+    "lat" : 29.32799253918158,
+    "lon" : 8.55384853594673
+  }, {
+    "lat" : 38.48263805667711,
+    "lon" : 29.128481874763178
+  }, {
+    "lat" : 67.2888393096098,
+    "lon" : 58.94246130826563
+  }, {
+    "lat" : 44.04500978422076,
+    "lon" : 13.691444994844792
+  }, {
+    "lat" : 12.926354517725514,
+    "lon" : 41.780325265004215
+  }, {
+    "lat" : 53.021119883840065,
+    "lon" : 92.11427711863695
+  }, {
+    "lat" : 43.59883872307816,
+    "lon" : 63.16366960208566
+  }, {
+    "lat" : 60.29107272478414,
+    "lon" : 22.84620707872065
+  }, {
+    "lat" : 6.430063759053429,
+    "lon" : 1.1303775322611065
+  }, {
+    "lat" : 4.358909890146478,
+    "lon" : 68.42267183025479
+  }, {
+    "lat" : 56.14131601946756,
+    "lon" : 32.15674285719822
+  }, {
+    "lat" : 71.9044954136298,
+    "lon" : 97.51448120458052
+  }, {
+    "lat" : 5.914332369069985,
+    "lon" : 81.86201298775093
+  }, {
+    "lat" : 84.14465941313047,
+    "lon" : 30.513893171376527
+  }, {
+    "lat" : 75.66087480477964,
+    "lon" : 11.265399995289604
+  }, {
+    "lat" : 42.09800459380706,
+    "lon" : 35.328678915269506
+  }, {
+    "lat" : 23.965615237682236,
+    "lon" : 89.30985081676617
+  }, {
+    "lat" : 45.39249878045272,
+    "lon" : 36.49947854475647
+  }, {
+    "lat" : 31.6878520781124,
+    "lon" : 83.03891226574184
+  }, {
+    "lat" : 15.504343335862602,
+    "lon" : 5.582471653385735
+  }, {
+    "lat" : 73.4925547497728,
+    "lon" : 76.30714485176765
+  }, {
+    "lat" : 2.1030006050429817,
+    "lon" : 51.31197936476646
+  }, {
+    "lat" : 98.60817227197883,
+    "lon" : 24.677696697194364
+  }, {
+    "lat" : 19.269970651130063,
+    "lon" : 95.17680005223215
+  }, {
+    "lat" : 22.49077551843499,
+    "lon" : 72.60731714124192
+  }, {
+    "lat" : 96.4650621099385,
+    "lon" : 70.94826898574617
+  }, {
+    "lat" : 58.86230516446147,
+    "lon" : 14.471541900569528
+  }, {
+    "lat" : 72.87802682077016,
+    "lon" : 18.062781225285683
+  }, {
+    "lat" : 47.27311511481393,
+    "lon" : 24.71017273616831
+  }, {
+    "lat" : 59.807499516093884,
+    "lon" : 89.70038454007262
+  }, {
+    "lat" : 28.84151556682122,
+    "lon" : 26.582893046432034
+  }, {
+    "lat" : 26.47289213929015,
+    "lon" : 81.46455600328238
+  }, {
+    "lat" : 14.508932735324919,
+    "lon" : 11.861258323288837
+  }, {
+    "lat" : 73.6449405358406,
+    "lon" : 18.74487429483258
+  }, {
+    "lat" : 71.81921596794598,
+    "lon" : 74.32837454479933
+  }, {
+    "lat" : 76.07199375066558,
+    "lon" : 56.5597250010724
+  }, {
+    "lat" : 22.12314542437359,
+    "lon" : 23.231007956426552
+  }, {
+    "lat" : 39.21343998484627,
+    "lon" : 29.793661897396127
+  }, {
+    "lat" : 7.899683881019914,
+    "lon" : 4.7875459930445174
+  }, {
+    "lat" : 4.5387101264729885,
+    "lon" : 2.5644715168449794
+  }, {
+    "lat" : 68.83822389472802,
+    "lon" : 25.68768132524959
+  } ]
+}

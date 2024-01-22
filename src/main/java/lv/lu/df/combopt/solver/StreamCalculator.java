@@ -6,54 +6,44 @@ import ai.timefold.solver.core.api.score.stream.ConstraintFactory;
 import ai.timefold.solver.core.api.score.stream.ConstraintProvider;
 import ai.timefold.solver.core.api.score.stream.Joiners;
 import lv.lu.df.combopt.domain.Bus;
-import lv.lu.df.combopt.domain.Student;
-import lv.lu.df.combopt.domain.Visit;
-import org.apache.commons.lang3.ObjectUtils;
+import lv.lu.df.combopt.domain.BusStop;
 
-import static ai.timefold.solver.core.api.score.stream.ConstraintCollectors.count;
 import static ai.timefold.solver.core.api.score.stream.Joiners.equal;
-import static ai.timefold.solver.core.api.score.stream.Joiners.overlapping;
 
 public class StreamCalculator implements ConstraintProvider {
     @Override
     public Constraint[] defineConstraints(ConstraintFactory constraintFactory) {
         return new Constraint[]{
-                //everyVisit(constraintFactory),
-                //totalDistance(constraintFactory),
+                busUsage(constraintFactory),
                 isCapacityConstraintBroken(constraintFactory),
                 visit2visit(constraintFactory),
                 depot2visit(constraintFactory),
+                visit2depot(constraintFactory),
                 capacityOverflow(constraintFactory),
-                impossibleStudents(constraintFactory),
-                undeliveredStudens(constraintFactory),
-                busUsage(constraintFactory),
+                // Time window constraints
                 visitOutsideTW(constraintFactory),
                 workTimeOverflow(constraintFactory),
                 busOutsideTW(constraintFactory),
                 returnOutsideTW(constraintFactory),
-                // studentNotArrived, studentPickedAfterPref, studentDeliveredBeforePref, studentDeliveredAfter
+                // Student constraints
                 studentNotArrived(constraintFactory),
                 studentPickedAfterPref(constraintFactory),
                 studentDeliveredBeforePref(constraintFactory),
                 studentDeliveredAfter(constraintFactory),
-                studentInCorrectSchool(constraintFactory)
+                studentInCorrectSchool(constraintFactory),
+                impossibleStudents(constraintFactory),
+                undeliveredStudens(constraintFactory)
+
         };
     }
 
-//    public Constraint everyVisit(ConstraintFactory constraintFactory){
-//        return constraintFactory
-//                .forEach(Visit.class)
-//                .penalize(HardSoftScore.ONE_SOFT, visit -> 1)
-//                .asConstraint("everyVisit");
-//    }
-//
-//    public Constraint totalDistance(ConstraintFactory constraintFactory){
-//        return constraintFactory
-//                .forEach(Bus.class)
-//                .filter(bus -> bus.getTotalDistance() > 0)
-//                .penalize(HardSoftScore.ONE_SOFT, bus -> (int) Math.round(bus.getTotalDistance()*1000))
-//                .asConstraint("totalDistance");
-//    }
+    public Constraint busUsage(ConstraintFactory constraintFactory){
+        return constraintFactory
+                .forEach(Bus.class)
+                .filter(bus -> !bus.getBusStops().isEmpty())
+                .penalize(HardSoftScore.ONE_SOFT, bus -> (int) Math.round(bus.getCostUsage()*100))
+                .asConstraint("busUsage");
+    }
 
     public Constraint isCapacityConstraintBroken(ConstraintFactory constraintFactory){
         return constraintFactory
@@ -65,9 +55,9 @@ public class StreamCalculator implements ConstraintProvider {
 
     public Constraint visit2visit(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
+                .forEach(BusStop.class)
                 .filter(visit -> visit.getNext() != null)
-                .join(Bus.class, Joiners.equal(Visit::getBus, v->v))
+                .join(Bus.class, Joiners.equal(BusStop::getBus, v->v))
                 .penalize(HardSoftScore.ONE_SOFT, (visit, bus) ->
                         (int) Math.round(
                                 visit.getLocation().distanceTo(visit.getNext().getLocation())
@@ -78,9 +68,9 @@ public class StreamCalculator implements ConstraintProvider {
 
     public Constraint depot2visit(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
+                .forEach(BusStop.class)
                 .filter(visit -> visit.getPrev() == null)
-                .join(Bus.class, equal(Visit::getBus, v -> v))
+                .join(Bus.class, equal(BusStop::getBus, v -> v))
                 .penalize(HardSoftScore.ONE_SOFT, (visit, bus) ->
                         (int) Math.round(bus.getDepot().distanceTo(visit.getLocation())
                                 * bus.getCostDistance() * 100) // cost in cents
@@ -90,9 +80,9 @@ public class StreamCalculator implements ConstraintProvider {
 
     public Constraint visit2depot(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
+                .forEach(BusStop.class)
                 .filter(visit -> visit.getNext() == null)
-                .join(Bus.class, equal(Visit::getBus, v -> v))
+                .join(Bus.class, equal(BusStop::getBus, v -> v))
                 .penalize(HardSoftScore.ONE_SOFT, (visit, bus) ->
                         (int) Math.round(visit.getLocation().distanceTo(bus.getDepot())
                                 * bus.getCostDistance() * 100)
@@ -102,42 +92,19 @@ public class StreamCalculator implements ConstraintProvider {
 
     public Constraint capacityOverflow(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
-                .join(Bus.class, equal(Visit::getBus, v -> v))
+                .forEach(BusStop.class)
+                .join(Bus.class, equal(BusStop::getBus, v -> v))
                 .filter((visit, bus) -> visit.getUndeliveredStudents() > bus.getCapacity())
-                .penalize(HardSoftScore.ONE_HARD, (vi, ve) -> 100) // wtf is this "(vi, ve) -> 100"
+                .penalize(HardSoftScore.ONE_HARD, (vi, ve) -> 100)
                 .asConstraint("capacityOverflow");
     }
 
-    public Constraint impossibleStudents(ConstraintFactory constraintFactory) {
-        return constraintFactory
-                .forEach(Visit.class)
-                .filter(visit -> visit.getUndeliveredStudents() < 0)
-                .penalize(HardSoftScore.ONE_HARD, v -> 100)
-                .asConstraint("impossibleStudents");
-    }
-
-    public Constraint undeliveredStudens(ConstraintFactory constraintFactory) {
-        return constraintFactory
-                .forEach(Visit.class)
-                .filter(visit -> visit.getNext() == null && visit.getUndeliveredStudents() > 0)
-                .penalize(HardSoftScore.ONE_HARD, v -> 10)
-                .asConstraint("undeliveredStudens");
-    }
-
-    public Constraint busUsage(ConstraintFactory constraintFactory){
-        return constraintFactory
-                .forEach(Bus.class)
-                .filter(bus -> !bus.getVisits().isEmpty())
-                .penalize(HardSoftScore.ONE_SOFT, bus -> (int) Math.round(bus.getCostUsage()*100))
-                .asConstraint("busUsage");
-    }
 
     // -- TIME CONSTRAINTS:
 
     public Constraint visitOutsideTW(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
+                .forEach(BusStop.class)
                 .filter(visit -> visit.getDepartureTime() != null &&  visit.getDepartureTime() > visit.getTwFinish())
                 .penalize(HardSoftScore.ONE_HARD)
                 .asConstraint("visitOutsideTW");
@@ -146,8 +113,8 @@ public class StreamCalculator implements ConstraintProvider {
     public Constraint workTimeOverflow(ConstraintFactory constraintFactory){
         return constraintFactory
                 .forEach(Bus.class)
-                .filter(bus -> !bus.getVisits().isEmpty())
-                .join(Visit.class, Joiners.equal(v->v, Visit::getBus))
+                .filter(bus -> !bus.getBusStops().isEmpty())
+                .join(BusStop.class, Joiners.equal(v->v, BusStop::getBus))
                 .filter((bus, last)->last.getNext() == null)
                 .filter((bus, last) -> last.getDepartureTime() + last.getLocation().timeTo(bus.getDepot()) + bus.getSrvFTime() -
                         bus.getTwStart() > bus.getMaxWorkTime())
@@ -157,8 +124,8 @@ public class StreamCalculator implements ConstraintProvider {
 
     public Constraint busOutsideTW(ConstraintFactory constraintFactory){
         return constraintFactory
-                .forEach(Visit.class)
-                .join(Bus.class, equal(Visit::getBus, v->v))
+                .forEach(BusStop.class)
+                .join(Bus.class, equal(BusStop::getBus, v->v))
                 .filter((visit, bus) -> visit.getDepartureTime() > bus.getTwFinish())
                 .penalize(HardSoftScore.ONE_HARD)
                 .asConstraint("busOutsideTW");
@@ -167,8 +134,8 @@ public class StreamCalculator implements ConstraintProvider {
     public Constraint returnOutsideTW(ConstraintFactory constraintFactory){
         return constraintFactory
                 .forEach(Bus.class)
-                .filter(bus -> !bus.getVisits().isEmpty())
-                .join(Visit.class, Joiners.equal(v->v, Visit::getBus))
+                .filter(bus -> !bus.getBusStops().isEmpty())
+                .join(BusStop.class, Joiners.equal(v->v, BusStop::getBus))
                 .filter((bus, last) -> last.getNext() == null)
                 .filter(((bus, last) -> last.getDepartureTime() +
                         last.getLocation().timeTo(bus.getDepot()) +
@@ -229,4 +196,21 @@ public class StreamCalculator implements ConstraintProvider {
                 .penalize(HardSoftScore.ONE_HARD, v->10)
                 .asConstraint("studentInCorrectSchool");
     }
+
+    public Constraint impossibleStudents(ConstraintFactory constraintFactory) {
+        return constraintFactory
+                .forEach(BusStop.class)
+                .filter(visit -> visit.getUndeliveredStudents() < 0)
+                .penalize(HardSoftScore.ONE_HARD, v -> 100)
+                .asConstraint("impossibleStudents");
+    }
+
+    public Constraint undeliveredStudens(ConstraintFactory constraintFactory) {
+        return constraintFactory
+                .forEach(BusStop.class)
+                .filter(visit -> visit.getNext() == null && visit.getUndeliveredStudents() > 0)
+                .penalize(HardSoftScore.ONE_HARD, v -> 10)
+                .asConstraint("undeliveredStudens");
+    }
+
 }

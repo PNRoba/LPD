@@ -2,88 +2,88 @@ package lv.lu.df.combopt.solver;
 
 import ai.timefold.solver.core.api.domain.variable.VariableListener;
 import ai.timefold.solver.core.api.score.director.ScoreDirector;
+import lv.lu.df.combopt.domain.BusStop;
 import lv.lu.df.combopt.domain.SchoolBusSolution;
-import lv.lu.df.combopt.domain.Visit;
 
-public class StudentPickupListener implements VariableListener<SchoolBusSolution, Visit> {
+public class StudentPickupListener implements VariableListener<SchoolBusSolution, BusStop> {
 
     @Override
-    public void beforeVariableChanged(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
+    public void beforeVariableChanged(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
 
     }
 
     @Override
-    public void afterVariableChanged(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
-        if(visit.getBus() == null) {
-            scoreDirector.beforeVariableChanged(visit, "undeliveredStudents");
-            visit.setUndeliveredStudents(0);
-            scoreDirector.afterVariableChanged(visit, "undeliveredStudents");
-            scoreDirector.beforeVariableChanged(visit, "deliveredStudents");
-            visit.setDeliveredStudents(0);
-            scoreDirector.afterVariableChanged(visit, "deliveredStudents");
-            scoreDirector.beforeVariableChanged(visit, "arrivalTime");
-            visit.setArrivalTime(null);
-            scoreDirector.afterVariableChanged(visit, "arrivalTime");
+    public void afterVariableChanged(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
+        if(busStop.getBus() == null) {
+            scoreDirector.beforeVariableChanged(busStop, "undeliveredStudents");
+            busStop.setUndeliveredStudents(0);
+            scoreDirector.afterVariableChanged(busStop, "undeliveredStudents");
+            scoreDirector.beforeVariableChanged(busStop, "deliveredStudents");
+            busStop.setDeliveredStudents(0);
+            scoreDirector.afterVariableChanged(busStop, "deliveredStudents");
+            scoreDirector.beforeVariableChanged(busStop, "arrivalTime");
+            busStop.setArrivalTime(null);
+            scoreDirector.afterVariableChanged(busStop, "arrivalTime");
 
         } else {
-            Integer undelivered = visit.getPrev() != null ? visit.getPrev().getUndeliveredStudents() : 0;
-            Integer delivered = visit.getPrev() != null ? visit.getPrev().getDeliveredStudents() : 0;
-            Integer arrival = visit.getPrev() != null && visit.getPrev().getArrivalTime() != null ?
-                    visit.getPrev().getDepartureTime() + visit.getPrev().getLocation().timeTo(visit.getLocation()) :
-                    visit.getBus().getTwStart() + visit.getSrvTime() +
-                            visit.getBus().getDepot().timeTo(visit.getLocation());
+            Integer undelivered = busStop.getPrev() != null ? busStop.getPrev().getUndeliveredStudents() : 0;
+            Integer delivered = busStop.getPrev() != null ? busStop.getPrev().getDeliveredStudents() : 0;
+            Integer arrival = busStop.getPrev() != null && busStop.getPrev().getArrivalTime() != null ?
+                    busStop.getPrev().getDepartureTime() + busStop.getPrev().getLocation().timeTo(busStop.getLocation()) :
+                    busStop.getBus().getTwStart() + busStop.getSrvTime() +
+                            busStop.getBus().getDepot().timeTo(busStop.getLocation());
 
 
-            Visit shadowVisit = visit;
-            while (shadowVisit != null) {
-                switch (shadowVisit.getVisitType()){
+            BusStop shadowBusStop = busStop;
+            while (shadowBusStop != null) {
+                switch (shadowBusStop.getBusStopType()){
                     case STUDENT -> {
-                        undelivered = undelivered + shadowVisit.getVolume();
+                        undelivered = undelivered + shadowBusStop.getVolume();
                     }
                     case SCHOOL -> {
                         delivered = delivered + undelivered;
                         undelivered = 0;
                     }
                 }
-                scoreDirector.beforeVariableChanged(shadowVisit, "undeliveredStudents");
-                shadowVisit.setUndeliveredStudents(undelivered);
-                scoreDirector.afterVariableChanged(shadowVisit, "undeliveredStudents");
-                scoreDirector.beforeVariableChanged(shadowVisit, "deliveredStudents");
-                shadowVisit.setDeliveredStudents(delivered);
-                scoreDirector.afterVariableChanged(shadowVisit, "deliveredStudents");
+                scoreDirector.beforeVariableChanged(shadowBusStop, "undeliveredStudents");
+                shadowBusStop.setUndeliveredStudents(undelivered);
+                scoreDirector.afterVariableChanged(shadowBusStop, "undeliveredStudents");
+                scoreDirector.beforeVariableChanged(shadowBusStop, "deliveredStudents");
+                shadowBusStop.setDeliveredStudents(delivered);
+                scoreDirector.afterVariableChanged(shadowBusStop, "deliveredStudents");
 
-                scoreDirector.beforeVariableChanged(shadowVisit, "arrivalTime");
-                shadowVisit.setArrivalTime(arrival);
-                scoreDirector.afterVariableChanged(shadowVisit, "arrivalTime");
+                scoreDirector.beforeVariableChanged(shadowBusStop, "arrivalTime");
+                shadowBusStop.setArrivalTime(arrival);
+                scoreDirector.afterVariableChanged(shadowBusStop, "arrivalTime");
 
 
-                shadowVisit = shadowVisit.getNext();
+                shadowBusStop = shadowBusStop.getNext();
 
-                if (shadowVisit != null) {
-                    arrival = shadowVisit.getPrev().getDepartureTime() +
-                            shadowVisit.getPrev().getLocation().timeTo(shadowVisit.getLocation());
+                if (shadowBusStop != null) {
+                    arrival = shadowBusStop.getPrev().getDepartureTime() +
+                            shadowBusStop.getPrev().getLocation().timeTo(shadowBusStop.getLocation());
                 }
             }
         }
     }
 
     @Override
-    public void beforeEntityAdded(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
+    public void beforeEntityAdded(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
 
     }
 
     @Override
-    public void afterEntityAdded(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
+    public void afterEntityAdded(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
 
     }
 
     @Override
-    public void beforeEntityRemoved(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
+    public void beforeEntityRemoved(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
 
     }
 
     @Override
-    public void afterEntityRemoved(ScoreDirector<SchoolBusSolution> scoreDirector, Visit visit) {
+    public void afterEntityRemoved(ScoreDirector<SchoolBusSolution> scoreDirector, BusStop busStop) {
 
     }
 }

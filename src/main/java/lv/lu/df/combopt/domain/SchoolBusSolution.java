@@ -33,9 +33,9 @@ public class SchoolBusSolution {
 
     @ProblemFactCollectionProperty
     @ValueRangeProvider
-    private List<Visit> visitList = new ArrayList<>();
+    private List<BusStop> busStopList = new ArrayList<>();
 
-    private List<Visit> schoolList = new ArrayList<>();
+    private List<BusStop> schoolList = new ArrayList<>();
 
     @ProblemFactCollectionProperty
     private List<Location> locationList = new ArrayList<>();
@@ -51,17 +51,13 @@ public class SchoolBusSolution {
         }
     }
 
-//    @ValueRangeProvider(id = "visitRange")
-//    public List<Visit> getVisitRange() {
-//        return visitList;
-//    }
 
     public void print() {
         this.getBusList().forEach(bus -> {
             LOGGER.info(bus.getName() + "("+ bus.getCapacity() +")");
-            bus.getVisits().forEach(visit -> {
+            bus.getBusStops().forEach(visit -> {
                 LOGGER.info("     " + visit.getName() + " "
-                        + visit.getVisitType() + " (" + visit.getVolume() + ")  "
+                        + visit.getBusStopType() + " (" + visit.getVolume() + ")  "
                         + visit.getBus().getName() + " (" + visit.getBus().getCapacity() + ")  "
                         + " und=" + visit.getUndeliveredStudents()
                         + " del=" + visit.getDeliveredStudents()
@@ -74,9 +70,9 @@ public class SchoolBusSolution {
     }
 
     public void printStudents() {
-        this.getVisitList().forEach(visit -> {
+        this.getBusStopList().forEach(visit -> {
             LOGGER.info(
-                    " Type=" + visit.getVisitType() +
+                    " Type=" + visit.getBusStopType() +
                     " Students=" + visit.getStudentList()
             );
         });
@@ -121,9 +117,9 @@ public class SchoolBusSolution {
 
 
 
-        Visit a1 = new Visit();
+        BusStop a1 = new BusStop();
         a1.setName("Studenti1");
-        a1.setVisitType(Visit.VisitType.STUDENT);
+        a1.setBusStopType(BusStop.BusStopType.STUDENT);
         a1.setVolume(6);
 
         Location a1Loc = new Location(0.0, 4.0);
@@ -133,9 +129,9 @@ public class SchoolBusSolution {
         a1.setTwFinish(TIME8AM + 12 * HOUR);
 
 
-        Visit a2 = new Visit();
+        BusStop a2 = new BusStop();
         a2.setName("Studenti2");
-        a2.setVisitType(Visit.VisitType.STUDENT);
+        a2.setBusStopType(BusStop.BusStopType.STUDENT);
         a2.setVolume(4);
         Location a2Loc = new Location(4.0, 0.0);
         a2.setLocation(a2Loc);
@@ -143,9 +139,9 @@ public class SchoolBusSolution {
         a2.setTwStart(TIME8AM);
         a2.setTwFinish(TIME8AM + 12 * HOUR);
 
-        Visit a3 = new Visit();
+        BusStop a3 = new BusStop();
         a3.setName("Studenti3");
-        a3.setVisitType(Visit.VisitType.STUDENT);
+        a3.setBusStopType(BusStop.BusStopType.STUDENT);
         a3.setVolume(10);
         Location a3Loc = new Location(8.0, 0.0);
         a3.setLocation(a3Loc);
@@ -153,9 +149,9 @@ public class SchoolBusSolution {
         a3.setTwStart(TIME8AM);
         a3.setTwFinish(TIME8AM + 12 * HOUR);
 
-        Visit a4 = new Visit();
+        BusStop a4 = new BusStop();
         a4.setName("Skola1");
-        a4.setVisitType(Visit.VisitType.SCHOOL);
+        a4.setBusStopType(BusStop.BusStopType.SCHOOL);
         a4.setVolume(20);
         Location a4Loc = new Location(4.0, 4.0);
         a4.setLocation(a4Loc);
@@ -163,9 +159,9 @@ public class SchoolBusSolution {
         a4.setTwStart(TIME8AM);
         a4.setTwFinish(TIME8AM + 12 * HOUR);
 
-        Visit a5 = new Visit();
+        BusStop a5 = new BusStop();
         a5.setName("Skola2");
-        a5.setVisitType(Visit.VisitType.SCHOOL);
+        a5.setBusStopType(BusStop.BusStopType.SCHOOL);
         a5.setVolume(20);
         Location a5Loc = new Location(5.0, 5.0);
         a5.setLocation(a5Loc);
@@ -175,7 +171,7 @@ public class SchoolBusSolution {
 
         problem.getBusList().addAll(List.of(b1, b2));
         problem.getLocationList().addAll(List.of(a1Loc, a2Loc, a3Loc, a4Loc, a5Loc));
-        problem.getVisitList().addAll(List.of(a1, a2, a3, a4, a5));
+        problem.getBusStopList().addAll(List.of(a1, a2, a3, a4, a5));
 
         return problem;
     }
@@ -193,8 +189,8 @@ public class SchoolBusSolution {
 
         Random random = new Random();
         // Bus generator
-        // for one Bus ~20 stops + 1 depot stop
-        for (int i = 1; i <=scale / 20+1; i++){
+        // for one Bus ~15 stops + 1 depot stop
+        for (int i = 1; i <=scale / 15+1; i++){
             Bus b1 = new Bus();
             b1.setName("AAA"+i);
             b1.setCapacity(499+random.nextInt(100)-50);
@@ -216,9 +212,9 @@ public class SchoolBusSolution {
             problem.getLocationList().add(depotLoc);
         }
         for (int i = 1; i <=scale; i++){
-            Visit a1 = new Visit();
+            BusStop a1 = new BusStop();
             a1.setName("Studenti"+i);
-            a1.setVisitType(Visit.VisitType.STUDENT);
+            a1.setBusStopType(BusStop.BusStopType.STUDENT);
 //            a1.setVolume(random.nextInt(50));
 
             Location a1Loc = new Location(random.nextDouble(100), random.nextDouble(100));
@@ -227,7 +223,7 @@ public class SchoolBusSolution {
             a1.setTwStart(TIME8AM + random.nextInt(HOUR*2));
             a1.setTwFinish(TIME8AM + 8 * HOUR - random.nextInt(HOUR*2));
 
-            problem.getVisitList().add(a1);
+            problem.getBusStopList().add(a1);
             problem.getLocationList().add(a1Loc);
         }
 
@@ -235,9 +231,9 @@ public class SchoolBusSolution {
             Location skolaLoc = new Location(random.nextDouble(100), random.nextDouble(100));
             problem.getLocationList().add(skolaLoc);
             for(int j = 1; j <= 3; j++){
-                Visit a1 = new Visit();
+                BusStop a1 = new BusStop();
                 a1.setName("Skola"+i+ "-"+j);
-                a1.setVisitType(Visit.VisitType.SCHOOL);
+                a1.setBusStopType(BusStop.BusStopType.SCHOOL);
                 a1.setVolume(1000);
 
                 a1.setLocation(skolaLoc);
@@ -246,16 +242,16 @@ public class SchoolBusSolution {
                 a1.setTwFinish(TIME8AM + 16*HOUR);
 
                 problem.getSchoolList().add(a1);
-                problem.getVisitList().add(a1);
+                problem.getBusStopList().add(a1);
             }
         }
 
         // student list
-        for (Visit visit : problem.getVisitList()){
-            if(visit.getVisitType() == Visit.VisitType.STUDENT){
+        for (BusStop busStop : problem.getBusStopList()){
+            if(busStop.getBusStopType() == BusStop.BusStopType.STUDENT){
                 for (int j = 1; j <=random.nextInt(1,30); j++){
                     Student s1 = new Student();
-                    s1.setName("st-"+visit.getName()+"-"+j);
+                    s1.setName("st-"+ busStop.getName()+"-"+j);
                     int rand = random.nextInt(problem.getSchoolList().size());
                     String[] str = problem.getSchoolList().get(rand).getName().split("-");
                     s1.setSchool(str[0]);
@@ -265,10 +261,10 @@ public class SchoolBusSolution {
                     s1.setFirstLectureTime(random.nextInt(8,9)*HOUR+random.nextInt(0,1)*1800);
                     s1.setPrefTimeLength(random.nextInt(10,30)*60);
                     // problem.getSchoolList().get(rand).getStudentList().add(s1);
-                    visit.getStudentList().add(s1);
+                    busStop.getStudentList().add(s1);
                 }
-                visit.setVolume(visit.getStudentList().size());
-                visit.setSrvTime(60*visit.getStudentList().size());
+                busStop.setVolume(busStop.getStudentList().size());
+                busStop.setSrvTime(60* busStop.getStudentList().size());
             }
         }
 

@@ -4,7 +4,7 @@ import ai.timefold.solver.core.api.score.buildin.hardsoft.HardSoftScore;
 import ai.timefold.solver.core.api.score.calculator.EasyScoreCalculator;
 import lv.lu.df.combopt.domain.Bus;
 import lv.lu.df.combopt.domain.SchoolBusSolution;
-import lv.lu.df.combopt.domain.Visit;
+import lv.lu.df.combopt.domain.BusStop;
 
 public class ScoreCalculator implements EasyScoreCalculator<SchoolBusSolution, HardSoftScore> {
     @Override
@@ -15,16 +15,16 @@ public class ScoreCalculator implements EasyScoreCalculator<SchoolBusSolution, H
         for (Bus bus: schoolBusSolution.getBusList()) {
             Integer studentsTaken = 0, studentsDelivered = 0;
 
-            for (Visit visit: bus.getVisits()){
-                switch (visit.getVisitType()){
+            for (BusStop busStop : bus.getBusStops()){
+                switch (busStop.getBusStopType()){
                     case STUDENT -> {
-                        studentsTaken = studentsTaken + visit.getVolume();
+                        studentsTaken = studentsTaken + busStop.getVolume();
                     }
                     case SCHOOL -> {
 //                        studentsDelivered = studentsDelivered + studentsTaken;
-//                        studentsTaken = studentsTaken + visit.getVolume();
+//                        studentsTaken = studentsTaken + busStop.getVolume();
                     }
-                    default -> throw new IllegalStateException("Unexpected Value:" + visit.getVisitType());
+                    default -> throw new IllegalStateException("Unexpected Value:" + busStop.getBusStopType());
                 }
                 if (studentsTaken > bus.getCapacity()) hard = hard + (studentsTaken - bus.getCapacity());
                 if (studentsTaken < 0) hard = hard - studentsTaken;

@@ -18,15 +18,15 @@ import java.util.List;
         generator = ObjectIdGenerators.PropertyGenerator.class)
 public class Bus {
 
-    public enum VisitType {STUDENT, SCHOOL}
+    public enum BusStopType {STUDENT, SCHOOL}
 
     private String name;
     private int capacity;
-    private VisitType visitType;
+    private BusStopType busStopType;
 
     @PlanningListVariable
     @JsonIdentityReference
-    private List<Visit> visits = new ArrayList<>();
+    private List<BusStop> busStops = new ArrayList<>();
     private Location depot;
 
     // --------------
@@ -49,10 +49,10 @@ public class Bus {
     public Double getTotalDistance() {
         Double totalDistance = 0.0;
         Location prevLoc = this.getDepot();
-        for (Visit visit: this.getVisits()) {
+        for (BusStop busStop : this.getBusStops()) {
             totalDistance = totalDistance +
-                    prevLoc.distanceTo(visit.getLocation());
-            prevLoc = visit.getLocation();
+                    prevLoc.distanceTo(busStop.getLocation());
+            prevLoc = busStop.getLocation();
         }
         totalDistance = totalDistance +
                 prevLoc.distanceTo(this.getDepot());
@@ -69,8 +69,8 @@ public class Bus {
         int currentCapacity = 0;
         int pickedUpStudents = 0;
 
-        for (Visit visit : this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
                     int remainingCapacity = this.getCapacity() - currentCapacity;
                     if (remainingCapacity <= 0) {
@@ -79,14 +79,14 @@ public class Bus {
                     }
 
                     // Check if picking up the student exceeds the remaining capacity
-                    if (visit.getVolume() > remainingCapacity) {
+                    if (busStop.getVolume() > remainingCapacity) {
                         // Pick up enough students to fill the remaining capacity
                         pickedUpStudents += remainingCapacity;
                         currentCapacity += remainingCapacity;
                     } else {
-                        // Pick up all students in this visit
-                        currentCapacity += visit.getVolume();
-                        pickedUpStudents += visit.getVolume();
+                        // Pick up all students in this busStop
+                        currentCapacity += busStop.getVolume();
+                        pickedUpStudents += busStop.getVolume();
                     }
                 }
                 case SCHOOL -> {
@@ -96,7 +96,7 @@ public class Bus {
                         pickedUpStudents = 0;
                     }
                 }
-                default -> throw new IllegalStateException("Unexpected Value:" + visit.getVisitType());
+                default -> throw new IllegalStateException("Unexpected Value:" + busStop.getBusStopType());
             }
         }
 
@@ -106,11 +106,11 @@ public class Bus {
     @JsonIgnore
     public Integer studentNotArrivedYet(){
         List<Student> pickedBefore = new ArrayList<>();
-        for (Visit visit: this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
-                    for (Student student: visit.getStudentList()){
-                        if(student.getWaitStart()>=visit.getDepartureTime()){
+                    for (Student student: busStop.getStudentList()){
+                        if(student.getWaitStart()>= busStop.getDepartureTime()){
                             pickedBefore.add(student);
                         }
                     }
@@ -126,11 +126,11 @@ public class Bus {
     @JsonIgnore
     public Integer studentPickedAfterPrefTime(){
         int pickedAfter = 0;
-        for (Visit visit: this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
-                    for (Student student: visit.getStudentList()){
-                        if(student.getWaitStart()+student.getMaxWait()<visit.getDepartureTime()){
+                    for (Student student: busStop.getStudentList()){
+                        if(student.getWaitStart()+student.getMaxWait()< busStop.getDepartureTime()){
                             pickedAfter++;
                         }
                     }
@@ -147,14 +147,14 @@ public class Bus {
     public Integer studentDeliveredBeforePrefTime(){
         int delBeforePrefTime = 0;
         List<Student> studentList = new ArrayList<>();
-        for (Visit visit: this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
-                    studentList.addAll(visit.getStudentList());
+                    studentList.addAll(busStop.getStudentList());
                 }
                 case SCHOOL -> {
                     for (Student student: studentList){
-                        if(student.getFirstLectureTime()-student.getPrefTimeLength() < visit.getArrivalTime()){
+                        if(student.getFirstLectureTime()-student.getPrefTimeLength() < busStop.getArrivalTime()){
                             delBeforePrefTime++;
                         }
                     }
@@ -168,14 +168,14 @@ public class Bus {
     public Integer studentDeliveredAfterTime(){
         int delAfter = 0;
         List<Student> studentList = new ArrayList<>();
-        for (Visit visit: this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
-                    studentList.addAll(visit.getStudentList());
+                    studentList.addAll(busStop.getStudentList());
                 }
                 case SCHOOL -> {
                     for (Student student: studentList){
-                        if(student.getFirstLectureTime() > visit.getArrivalTime()){
+                        if(student.getFirstLectureTime() > busStop.getArrivalTime()){
                             delAfter++;
                         }
                     }
@@ -189,14 +189,14 @@ public class Bus {
     public Boolean correctSchool(){
         int corr = 0;
         List<Student> studentList = new ArrayList<>();
-        for (Visit visit: this.getVisits()) {
-            switch (visit.getVisitType()) {
+        for (BusStop busStop : this.getBusStops()) {
+            switch (busStop.getBusStopType()) {
                 case STUDENT -> {
-                    studentList.addAll(visit.getStudentList());
+                    studentList.addAll(busStop.getStudentList());
                 }
                 case SCHOOL -> {
                     for (Student student: studentList){
-                        String[] str = visit.getName().split("-");
+                        String[] str = busStop.getName().split("-");
                         if(student.getSchool()!=str[0]){
                             corr++;
                         }

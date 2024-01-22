@@ -9,8 +9,8 @@ import ai.timefold.solver.core.config.solver.EnvironmentMode;
 import ai.timefold.solver.core.config.solver.SolverConfig;
 import ai.timefold.solver.core.config.solver.termination.TerminationConfig;
 import lv.lu.df.combopt.domain.Bus;
+import lv.lu.df.combopt.domain.BusStop;
 import lv.lu.df.combopt.domain.SchoolBusSolution;
-import lv.lu.df.combopt.domain.Visit;
 import lv.lu.df.combopt.solver.StreamCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +34,7 @@ public class Main {
         SolverFactory<SchoolBusSolution> solverFactory = SolverFactory.create(
                 new SolverConfig()
                         .withSolutionClass(SchoolBusSolution.class)
-                        .withEntityClasses(Bus.class, Visit.class)
+                        .withEntityClasses(Bus.class, BusStop.class)
                         //.withEasyScoreCalculatorClass(ScoreCalculator.class)
                         .withConstraintProviderClass(StreamCalculator.class)
                         .withTerminationConfig(new TerminationConfig()

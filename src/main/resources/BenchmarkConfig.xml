@@ -6,19 +6,16 @@
     <inheritedSolverBenchmark>
         <solver>
             <environmentMode>REPRODUCIBLE</environmentMode>
-            <!-- Define the model -->
             <solutionClass>lv.lu.df.combopt.domain.SchoolBusSolution</solutionClass>
             <entityClass>lv.lu.df.combopt.domain.Bus</entityClass>
-            <entityClass>lv.lu.df.combopt.domain.Visit</entityClass>
+            <entityClass>lv.lu.df.combopt.domain.BusStop</entityClass>
 
-            <!-- Define the score function -->
             <scoreDirectorFactory>
                 <constraintProviderClass>lv.lu.df.combopt.solver.StreamCalculator</constraintProviderClass>
             </scoreDirectorFactory>
 
-            <!-- Configure the optimization algorithms (optional) -->
             <termination>
-                <secondsSpentLimit>10</secondsSpentLimit>
+                <secondsSpentLimit>40</secondsSpentLimit>
             </termination>
 
             <constructionHeuristic />
@@ -26,15 +23,16 @@
         <problemBenchmarks>
             <solutionFileIOClass>lv.lu.df.combopt.domain.SchoolBusSolutionJsonIO</solutionFileIOClass>
             <writeOutputSolutionEnabled>true</writeOutputSolutionEnabled>
-<!--            <inputSolutionFile>data/classExamples20.json</inputSolutionFile>-->
             <inputSolutionFile>data/test20.json</inputSolutionFile>
             <inputSolutionFile>data/test50.json</inputSolutionFile>
             <inputSolutionFile>data/test100.json</inputSolutionFile>
             <inputSolutionFile>data/test150.json</inputSolutionFile>
             <inputSolutionFile>data/test200.json</inputSolutionFile>
             <inputSolutionFile>data/test500.json</inputSolutionFile>
+<!--            <inputSolutionFile>data/test1000.json</inputSolutionFile>-->
+<!--            <inputSolutionFile>data/test2000.json</inputSolutionFile>-->
+<!--            <inputSolutionFile>data/test5000.json</inputSolutionFile>-->
         </problemBenchmarks>
-        <!--<subSingleCount>5</subSingleCount>-->
     </inheritedSolverBenchmark>
 
     <solverBenchmark>
@@ -74,6 +72,42 @@
         </solver>
     </solverBenchmark>
     <solverBenchmark>
+        <name>Tabu 20 1000</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <subListChangeMoveSelector />
+                    <listChangeMoveSelector />
+                    <listSwapMoveSelector />
+                </unionMoveSelector>
+                <acceptor>
+                    <valueTabuSize>20</valueTabuSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1000</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>LAHC 100</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <subListChangeMoveSelector />
+                    <listChangeMoveSelector />
+                    <listSwapMoveSelector />
+                </unionMoveSelector>
+                <acceptor>
+                    <lateAcceptanceSize>100</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
         <name>LAHC 400</name>
         <solver>
             <localSearch>
@@ -84,6 +118,24 @@
                 </unionMoveSelector>
                 <acceptor>
                     <lateAcceptanceSize>400</lateAcceptanceSize>
+                </acceptor>
+                <forager>
+                    <acceptedCountLimit>1</acceptedCountLimit>
+                </forager>
+            </localSearch>
+        </solver>
+    </solverBenchmark>
+    <solverBenchmark>
+        <name>LAHC 600</name>
+        <solver>
+            <localSearch>
+                <unionMoveSelector>
+                    <subListChangeMoveSelector />
+                    <listChangeMoveSelector />
+                    <listSwapMoveSelector />
+                </unionMoveSelector>
+                <acceptor>
+                    <lateAcceptanceSize>600</lateAcceptanceSize>
                 </acceptor>
                 <forager>
                     <acceptedCountLimit>1</acceptedCountLimit>
